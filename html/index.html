@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Welcome To Royal Resorts</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+$(document).ready(function() {
+    $('#datePicker')
+        .datepicker({
+            format: 'mm/dd/yyyy'
+        })
+        .on('changeDate', function(e) {
+            // Revalidate the date field
+            $('#eventForm').formValidation('revalidateField', 'date');
+        });
+        $('#eventForm').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            name: {
+                validators: {
+                    notEmpty: {
+                        message: 'The name is required'
+                    }
+                }
+            },
+            date: {
+                validators: {
+                    notEmpty: {
+                        message: 'The date is required'
+                    },
+                    date: {
+                        format: 'MM/DD/YYYY',
+                        message: 'The date is not a valid'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+
+<body>
+  <div class="container-fluid">
+        <section>
+                <ul class="nav nav-pills" id="nav">
+                        <li ><a href="Home.html" class="active">Home</a></li>
+                        <li><a href="MeetingsEvents.html">Meetings&Events</a></li>
+                        <li><a href="Accomodation.html">Accomodation</a></li>
+                        <li><a href="Services1.html">Services</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>     
+               </ul> 
+            </section>
+            <div class="row">
+
+  <div class="col-md-4 left-panel">
+
+  </div>
+  <div class="col-md-4  slider">
+        
+
+    <div id="myCarousel" class="carousel slide" style="width: 500px;" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../images/paul-gaudriault-372147.jpg" class="img-responsive">
+            </div>
+            <div class="carousel-caption">
+                <h1>Welcome to Royal Resorts</h1>
+                
+            </div>
+            <div class="item">
+                 <img src="../images/adam-wilson-391594.jpg" class="img-responsive">
+            </div>
+            
+            <div class="item">
+                    <img src="../images/liam-pozz-247954.jpg" class="img-responsive">
+                </div>
+               
+                    <div class="item">
+                            <img src="../images/edgar-chaparro-143297.jpg" class="img-responsive">
+                        </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 right-panel">
+     <div class="checkAvail">
+            <form id="eventForm" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Event</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control" name="name" />
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Date</label>
+                        <div class="col-xs-5 date">
+                            <div class="input-group input-append date" id="datePicker">
+                                <input type="text" class="form-control" name="date" />
+                                <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <div class="col-xs-5 col-xs-offset-3">
+                            <button type="submit" class="btn btn-default">Validate</button>
+                        </div>
+                    </div>
+                </form>
+                
+    </div>   
+   </div> 
+   </div>
+   </div>
+</body>
+</html> 

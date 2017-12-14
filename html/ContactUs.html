@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+    <link href="http://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    
+    <title>Welcome to Baristo Resorts</title>
+    
+    <script>
+   function initialize() {
+    var mapOptions = {
+      center: new google.maps.LatLng(10.3236, 76.9510),
+      zoom: 9,
+      mapTypeId: google.maps.MapTypeId.HYBRID,
+      scrollwheel: false,
+      draggable: false,
+      panControl: true,
+      zoomControl: true,
+      mapTypeControl: true,
+      scaleControl: true,
+      streetViewControl: true,
+      overviewMapControl: true,
+      rotateControl: true,
+    };
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+  </head>
+   <body>
+    <div class="container-fluid">
+            <header>
+                    <div class="hdr">
+                        <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="nav nav-pills my-font" id="nav">
+                                        <li ><a href="Home.html">Home</a></li>
+                                        <li><a href="MeetingsEvents.html">Meetings&Events</a></li>
+                                        <li><a href="Accomodation.html">Accomodation</a></li>
+                                        <li><a href="Restaurant.html">Restaurant</a></li>
+                                        <li><a href="Services.html">Services</a></li>
+                                        <li><a href="#" class="active">Contact Us</a></li>     
+                                    </ul> 
+                       </div>
+                       </div>
+                        <div class="row">
+                        <div class="col-md-12">
+                             <h1 class="welcome-txt text-center my-font">Welcome to Baristo Resorts</h1>
+            
+                        </div>
+                    </div>
+                </div>
+                </header>
+   
+     
+   
+   <section>
+        <div class="row">
+               
+            <div class="col-md-6">
+                    <div class="col-md-12">
+                            <h1 class="text-center my-font">Send Us A Message</h1><br>
+                        </div>
+                <div class="form_div">
+                    <form name="contactForm">
+                        <input type="text" placeholder="Name" class="form-control"><br>
+                        <input type="email" placeholder="Email" class="form-control"><br>
+                        <textarea placeholder="Comments" cols="50" rows="7" class="form-control">
+                        </textarea><br>
+                        <button class="btn btn-info">Send Message</button>
+                    </form>
+                </div>
+                </div>
+                <div class="col-md-6">
+                        
+                        <addr>
+                                <h1 class="text-center my-font">Address</h1><br><br>
+                                <p class="text-center">
+                                       123,addr1 line1,<br>
+                                       addr1 line2,<br>
+                                       city - 5656578<br>
+                                       Phone :(5656) 788-786<br>
+                                       Fax   :(178) 767-326<br>
+    
+                                </p>
+                        </addr>
+                    </div>
+                
+            </div>
+        
+    </section>
+    
+   <section class="social-media">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+                        <h2 class="text-center my-font"><i class="fa fa-certificate"></i>&nbsp;&nbsp;About</h2>
+                            <p class="arranging"><br><br>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                      when an unknown printer took a galley of type and scrambled it to make a type
+                                       specimen book. It has survived not only five centuries.
+                            </p>
+                    </div>
+                    <div class="col-md-3">
+                        
+                        <h2 class="text-center my-font"><i class="fa fa-camera"></i>&nbsp;&nbsp;Tweets</h2>
+                            <p>
+                                    <h3 class="text-center my-font tweet">Tweet @abc</h3>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                     </p>
+                                     <h3 class="text-center my-font tweet">Tweet @abc</h3>
+                                     <p>          
+                                      when an unknown printer took a galley of type and scrambled it to make a type
+                                       specimen book. It has survived not only five centuries.
+                            </p>
+                    </div>
+                    <div class="col-md-3">
+                        
+                        <h2 class="text-center my-font"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Mailing List</h2>
+                            <p class="arranging">
+                                <br><br>
+                                    Subscribe for our mailing list for updates,offers and queries.<br><br>
+                                    <input type="email" placeholder="your mail" class="form-control"/><br><br>
+                                    <button type="submit" class="btn btn-warning">Submit</button>
+                            </p>
+                    </div>
+                    <div class="col-md-3">
+                        
+                        <h2 class="text-center my-font"><i class="fa fa-cog"></i>&nbsp;&nbsp;Social</h2><br><br>
+                            <p class="arranging">
+                                   123,addr1 line1,<br>
+                                   addr1 line2,<br>
+                                   city - 5656578<br>
+                                   Phone :(5656) 788-786<br>
+                                   Fax   :(178) 767-326<br>
+
+                            </p>
+                            
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                        <i class="fa fa-facebook"></i>&nbsp;&nbsp;
+                                        <i class="fa fa-twitter"></i>&nbsp;&nbsp;
+                                        <i class="fa fa-google-plus"></i>&nbsp;
+                                        <i class="fa fa-instagram"></i>
+                                        </div>
+                                    </div>
+                                
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row">
+                <div class="col-md-12 meetings_hd">
+                    <div id="map-canvas"></div>
+                </div>
+        </div>
+        <footer>
+                <section>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h5 class="font-color-reddish">About Us</h5>
+                            <p class="font-color-white"> lorem ipsum is a filler text or greeking commonly used to demonstrate the textual
+                                 elements of a graphic document.</p>
+                            <p><i class="fa fa-facebook font-color-reddish"></i>&nbsp;&nbsp;
+                                <i class="fa fa-instagram font-color-reddish"></i>&nbsp;&nbsp;
+                                <i class="fa fa-youtube font-color-reddish"></i>&nbsp;&nbsp;
+                                <i class="fa fa-twitter font-color-reddish"></i></p>
+                        </div>
+                        <div class="col-md-3 font-color-white">
+                            <h5 class="font-color-reddish">Contact Us</h5>
+                            <p >Address: 456,loren ipsum,loren.</p>
+                            <p>Phone: (456) 7887-7878</p>
+                            <p>Fax: (456) 7887-7878</p>
+                            <p>Email: abc@email.com</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="font-color-reddish">Work Time</h5>
+                            <p class="font-color-white">Monday - Friday ............8:00 A:M - 9:00 P:M</p>
+                            <p class="font-color-white">Saturday ......................11:00 A:M - 9:00 P:M</p>
+                            <p class="font-color-white">Sunday...........................1:00 P:M - 9:00 P:M</p>
+                        </div>
+                        <div class="col-md-3">
+                            <h5 class="font-color-reddish">From Twitter</h5>
+                            <p class="font-color-white"><i class="fa fa-twitter font-color-reddish">&nbsp;&nbsp;Tweets</i></p>
+                            <p class="font-color-white">lorem ipsum is a filler text or greeking commonly used to demonstrate the textual
+                                elements of a graphic document.</p>
+                            <p class="font-color-white">@jasmine  June 1,2017</p>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                                <i class="fa fa-copyright font-color-white">2017.All rights reserved.</i>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+                    
+</body>
+</html>
+</div>
+
+              
+    </body>
+    </html>

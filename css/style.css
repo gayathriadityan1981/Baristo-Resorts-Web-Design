@@ -1,0 +1,322 @@
+    body{
+        font-family: Helvitica;
+        font-size:15px;
+    }
+.hdr ul li{
+    font-size:20px;
+    font-weight: bold;
+}
+h1,h4{
+    font-weight:bold;
+}
+
+   /**home.html**/
+   .hdr{
+    background: linear-gradient(rgba(41, 40, 40, 0.5),rgba(0,0, 0,0.5)),url('../images/aaron-burden-178369.jpg');
+    height:100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color:white;
+ }
+ .my-font{
+    font-family: 'Tangerine', serif;
+   
+}
+.welcome-msg{
+    margin:15px;
+    padding:15px;
+}
+.welcome-txt{
+    background-color: rgb(27, 26, 26);
+    opacity:.8;
+    border:1px solid  rgb(27, 26, 26);
+    border-radius:8px;
+    color: white;
+    position: relative;
+    top:90px;
+    width: 500px;
+    margin-left:300px;
+    font-size: 60px;
+   
+}
+.para-text{
+    word-wrap: normal;
+    font-size: 18px;
+    word-spacing:3pt;
+    margin:25px;
+    padding:25px;
+}
+hr{
+    background-color:rgb(105, 104, 104);
+    height:2px;
+    }
+     footer{
+         background-color: black;
+         opacity:.8;
+         height:300px;
+    
+     }
+     .font-color-reddish{
+        color:rgb(228, 87, 87);
+       
+     }
+    
+     .font-color-white{
+         color:white;
+         font-size:13px;
+     }
+     .dishes{
+        margin-left:20px;
+        padding:30px;
+    }
+ .dishes-container{
+    border:2px solid rgb(48, 4, 4);
+    width:300px;
+    height:450px;
+    padding:5px;
+    margin-left:10px;
+    font-size: 1.2em;
+}
+.dishes-container img{
+    width:225px;
+    height:200px;
+    border-radius: 50%;
+}
+.price{
+ color:rgb(250, 18, 18);
+ font-size: 1.2em;
+ font-weight: bold;
+}
+        .img_snow{
+            background-size: cover;
+        }
+        .carousel-caption{
+             padding-top:18%;
+        }
+        .form_div{
+            width:70%;
+            height:400px;
+            margin-top: 80px;
+            margin-left: 50px;
+        }
+       
+        .slider{
+            margin-left:200px;
+            width:600px;
+            height:300px;
+        }
+
+        .right-panel{
+            margin-left:700px;
+        }
+        /** Accomodation.html**/
+    .booknow{
+        background-color: gainsboro;
+        width:100%;
+        height:80px;
+        margin-top:15px;
+    }
+    .accom{
+       
+        width:100%;
+        height:80px;
+    }
+    .accomm{
+     
+        width:100%;
+        height:400px;
+        color:black;
+       
+    }
+
+    .accom_details{
+        margin-left:50px;
+        line-height: 30px;
+        word-wrap:10px;
+    }
+    .facilities{
+        color:black;
+        line-height: 30px;
+        font-family: helvitica;
+        margin-left:50px;
+    }
+    
+   
+    .stdguestroom{
+     
+        padding-left:80px;
+        margin-top:30px;
+        height:400px;
+        line-height: 20px;
+        word-wrap: 12px;
+        
+    }
+    .room_img{
+        width:80%;
+        height:400px;
+        margin-left:50px;
+       
+    }
+    .accomm-h1{
+        margin-left:200px;
+    }
+    .accomm-h1-right{
+        margin-left:200px;
+    }
+/* Code for MeetingsEvents.html*/
+
+    .meetings_hd_img{
+        width:100%;
+        height:450px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size:4em;
+        color:rgb(255, 0, 85);
+    }
+    .meetings_header{
+        margin:60px;
+        padding: 10px;
+        height:200px;
+    }
+    .meetings_three_divs img{
+       width:100%;
+        height:200px;
+        margin:5px;
+        padding : 5px;
+    }
+
+    .meetings_divs_bottom h4{
+        color:grey;
+        text-decoration: underline;
+       margin-left:75px;
+       font-size: 30px;
+    }
+    .meetings_divs_bottom{
+        margin:3px;
+        padding:5px;
+       line-height: 25px;
+        word-wrap: 12px;
+        
+    }
+    .meetings_three_divs{
+        border:1px solid grey;
+        padding:5px;
+        margin:5px;
+        width:30%;
+    }
+   
+    /****Services.html******/
+    .meetings_divs_bottom h5{
+        margin-left:90px;
+        font-size: 1.2em;
+
+    }
+    
+   
+    .features i{
+        font-size: 40px;
+        color:#e67e22;
+        margin-left: 35%;
+    }
+    
+    .features h4{
+        margin-left: 40px;
+    }
+
+    /**footer code for all pages
+    .footter{
+        height:30px;
+        background-color: black;
+        color:white;
+    }**/
+    .footter .alignmt{
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size:10px;
+    }
+    /**menu bar for all pages**/
+    .menu_container{
+        background-color:rgb(6, 250, 87);
+        opacity:.8;
+       
+        width:200px;
+        color:white;
+    }
+   
+    #nav {
+        width: 100%;
+        float: left;
+        margin-top:2px;
+        margin-bottom:2px;
+        margin-left:0px;
+        padding: 0;
+        list-style: none;
+        background-color: cornflowerblue;
+        opacity:.8;
+        border-bottom: 1px solid #ccc; 
+        border-top: 1px solid #ccc; }
+    #nav a{
+        color:black;
+    }
+    .meeting{
+        background-color:rgb(223, 58, 58);
+        color:black;
+    }
+/**ContactUs.html**/
+    .msg-hdr{
+        margin:50px;
+    }
+
+    .social-media{
+        background-color: cornflowerblue;
+        color:white;
+        text-align: left;
+    }
+
+    .social-media h5{
+        text-align:left;
+    }
+     .fa-camera{
+        font-size:30px;
+
+    }
+    .fa-certificate{
+        font-size:30px;
+    }
+    .social-media .tweet{
+        color:blue;
+    }
+    /** code for google map in Contact Us.html**/
+    #map-canvas{
+        height:400px;
+       
+    }
+    /**Restaurant.html**/
+    .menu-desc{
+        background-color: black;
+        color:white;
+        font-size:12px;
+        text-align: center;
+        height:200px;
+       
+   
+    }
+    .menu-img{
+        width:100%;
+        height:200px;
+    }
+   
+    .menu-container{
+     
+       margin-bottom:10px;
+    }
+    .menu-container{
+        
+          margin-bottom:10px;
+       }
